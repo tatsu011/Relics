@@ -1,0 +1,16 @@
+[
+{
+  "modid": "relics",
+  "name": "Relics Mod",
+  "description": "Adds relics and dungeons from a lost world.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Tatsu011"],
+  "credits": "Tatsu011- author, Rex-22- SkeletonMod, Forge/FML - making this possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
