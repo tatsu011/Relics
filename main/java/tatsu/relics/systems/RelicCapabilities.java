@@ -5,6 +5,20 @@ package tatsu.relics.systems;
  */
 public class RelicCapabilities {
 
+    private static boolean enabled = false;
 
+
+
+
+
+    public void enable()
+    {
+        if(enabled)
+        {
+            return;
+        }
+
+
+    }
 
 }
