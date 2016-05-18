@@ -8,9 +8,9 @@ import tatsu.relics.constants.core;
 /**
  * Created by Tatsu on 5/13/2016.
  */
-public class itemBase extends Item {
+public class ItemBase extends Item {
 
-    public itemBase(String name)
+    public ItemBase(String name)
     {
         super();
         setRegistryName(core.MODID, name);
