@@ -11,6 +11,8 @@ import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
 import tatsu.relics.Relics;
 import tatsu.relics.constants.core;
+import tatsu.relics.systems.RelicCapabilities;
+import tatsu.relics.systems.RelicImpl;
 import tatsu.relics.systems.RelicPostfix;
 import tatsu.relics.systems.RelicPrefix;
 
@@ -42,34 +44,34 @@ public class RelicSword extends ItemSword {
 
 
 
-    private class RelicCap implements ICapabilitySerializable<NBTTagInt>
+    private class RelicCap implements ICapabilitySerializable<NBTTagCompound>
     {
-        private RelicPrefix relicPrefix;
-        private RelicPostfix relicPostfix;
+
+        private RelicImpl cap;
 
         public RelicCap()
         {
-
+            cap = new RelicImpl();
         }
 
         @Override
         public boolean hasCapability(Capability<?> capability, EnumFacing facing) {
-            return false;
+            return capability == RelicCapabilities.RELIC;
         }
 
         @Override
         public <T> T getCapability(Capability<T> capability, EnumFacing facing) {
-            return null;
+            return (T) this;
         }
 
         @Override
-        public NBTTagInt serializeNBT() {
-            return null;
+        public NBTTagCompound serializeNBT() {
+            return cap.serializeNBT();
         }
 
         @Override
-        public void deserializeNBT(NBTTagInt nbt) {
-
+        public void deserializeNBT(NBTTagCompound nbt) {
+            cap.deserializeNBT(nbt);
         }
     }
 

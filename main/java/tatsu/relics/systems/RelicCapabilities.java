@@ -5,6 +5,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagInt;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import tatsu.relics.constants.nbt;
 import tatsu.relics.items.RelicSword;
@@ -16,7 +17,8 @@ public class RelicCapabilities {
 
     private static boolean enabled = false;
 
-
+    @CapabilityInject(IRelic.class)
+    public static Capability<IRelic> RELIC = null;
 
 
 
@@ -33,7 +35,7 @@ public class RelicCapabilities {
     }
 
 
-    private class relicStorage implements Capability.IStorage<IRelic>
+    public class relicStorage implements Capability.IStorage<IRelic>
     {
 
 
