@@ -22,11 +22,6 @@ public abstract class CommonProxy {
 
     }
 
-    public void registerFuel()
-    {
-
-    }
-
 
     public void registerWorldGen()
     {

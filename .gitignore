@@ -1,0 +1,13 @@
+out/
+run/
+eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+.gradle/2.7/taskArtifacts/cache.properties
+.gradle/
+eclipse/
+build/
+Relics.iws
+gradlew
+gradlew.bat
+Relics.ipr
+.idea/
+gradle/

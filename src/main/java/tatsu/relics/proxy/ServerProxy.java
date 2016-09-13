@@ -6,5 +6,4 @@ package tatsu.relics.proxy;
 public class ServerProxy extends CommonProxy{
     //Server things probably...
 
-
 }

@@ -30,7 +30,7 @@ public class Relics {
     public static CreativeTabs modTab = new CreativeTabs(core.MODID) {
         @Override
         public Item getTabIconItem() {
-            return Items.iron_chestplate;
+            return Items.IRON_BOOTS;
         }
     };
 
@@ -41,7 +41,6 @@ public class Relics {
 
         proxy.registerBlocks();
 
-        proxy.registerFuel();
     }
 
     @Mod.EventHandler

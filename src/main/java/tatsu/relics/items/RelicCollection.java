@@ -8,16 +8,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class RelicCollection {
 
-
-
-
-
-    public static RelicSword relicIronSword = new RelicIronSword();
+    //public static RelicSword relicIronSword = new RelicIronSword();
 
 
     public static void init()
     {
-        GameRegistry.register(relicIronSword);
+        //GameRegistry.register(relicIronSword);
     }
 
 
